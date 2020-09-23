@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación para la Prosperidad y el Bienestar Social</title>
+    <link href="../resources/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+
+    <script id="menu-template" type="text/x-handlebars-template">
+        {{#each menuItem}}
+        <a href={{this.linkedPage}} class="menu-item">{{this.name}}</a>
+        {{/each}}
+    </script>
+
+</head>
+
+<body>
+
+    <header id="first">
+        <div id="foundation-logo">
+            <a href="../index.html"><img src="../resources/logos/logo-fundacion.svg"></a>
+        </div>
+        <div id="header-right">
+            <div id="page-title">
+                <h1>Fundación para la Prosperidad y el Bienestar Social</h1>
+            </div>
+            <div id="header-nav">
+                <div id="nav-menu-app">
+                    <span id="logo-menu">☰</span>
+                </div>
+                <nav id="nav-menu">
+                    <!-- Script id="menu-template" -->
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="body-main">
+        <h1>Presentación</h1><br>
+        <p>
+            LA FUNDACIÓN PARA LA PROSPERIDAD Y EL BIENESTAR SOCIAL es una institución que promueve acciones sociales y
+            comunitarias enfocadas en el desarrollo económico, social, político, cultural, deporte, tecnológico,
+            infraestructura, para los municipios, que sentimos la situación y los problemas como nuestros, es por esto
+            que colaboramos para alcanzar más equidad, paz, tolerancia e igualdad en todos los sectores tanto rural como
+            urbano.
+        </p><br>
+        <h1>Misión</h1><br>
+        <p>
+            Somos una fundación que trabajamos por el desarrollo social y el bienestar de los pueblos, contribuyendo a
+            un cambio positivo y próspero.
+        </p><br>
+        <h1>Visión</h1><br>
+        <p>
+            Ser ejemplo nacional e internacional en la construcción del mejoramiento de la calidad de vida de las
+            comunidades, dentro de un marco de paz, libertad, justicia, democracia, tolerancia, equidad, igualdad y
+            solidaridad, satisfaciendo sus necesidades básicas.
+        </p><br>
+        <h1>Valores Corporativos</h1><br>
+        <p>
+            Creemos que un país que se preocupa por sus iguales de manera integral, dispone un camino de paz, bienestar
+            y próspero, por ello estamos comprometidos con la niñez, adolescentes, adulto, adulto mayor, madres cabeza
+            de familia, desplazados, población víctima del conflicto armado, familia y personas en condiciones
+            especiales.
+            Observando la necesidad de promover soluciones a las profundas y diferentes problemáticas tanto sociales
+            como económicas que se enfrentan las comunidades tanto en la zona rural como urbana, se viene desarrollando
+            una labor comunitaria y social, donde la misma población que vive su propia realidad se convierte en líderes
+            de los procesos mediante la cooperación, corresponsabilidad y la inclusión.
+            Nuestra organización efectúa alianzas público-privadas que admitan la apertura de mayores espacios y
+            posibilidades donde la misma población es la beneficiada, y así lograr cultura ciudadana de solidaridad,
+            sentido de pertenencia y tolerancia.
+        </p><br>
+    </div>
+
+    <footer id="footer">
+        <div id="copyright">
+            <h5>© 2020 Fundación para la Prosperidad y el Bienestar Social</h5>
+        </div>
+        <div id="social-networks">
+            <div id="social-networks-logos">
+                <div>
+                    <a href="https://www.facebook.com/fundacionparalaprosperidadybienestarsocial/" target="_blank">
+                        <img class="social-logo" src="../resources/logos/logo-facebook-white.png">
+                    </a>
+                </div>
+                <!-- <div>
+                    <a href="">
+                        <img class="social-logo" src="../resources/logos/logo-instagram-whitef.png" target="_blank">
+                    </a>
+                </div> -->
+                <div>
+                    <a href="">
+                        <img class="social-logo" src="../resources/logos/logo-whatsapp-white.png" target="_blank">
+                    </a>
+                </div>
+            </div>
+            <div id="social-networks-text">
+                <h6>Visítanos en redes sociales</h6>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../resources/handlebar-menu.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+
+<!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> -->
