@@ -15,6 +15,8 @@
         {{/each}}
     </script>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 </head>
 
 <body>
@@ -57,7 +59,21 @@
             <span><a href="mailto:prosperidadybienestarsocial@gmail.com"
                     target="_blank">prosperidadybienestarsocial@gmail.com</a></span><br><br><br>
         </div>
-        
+        <h3>Haznos llegar tu inquietud o sugerencia</h3><br>
+        <form method="dialog" id="form1" onsubmit="sendEmail()">
+            <label for="emailid">Tu email</label><br>
+            <input type="email" id="emailid" name="emailid" placeholder="user@dir.com" required><br><br>
+
+            <input type="radio" name="inqsug" id="radio1" value="inquietud" checked>
+            <label for="radio1">Inquietud&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="radio" name="inqsug" id="radio2" value="sugerencia">
+            <label for="radio2">Sugerencia</label><br><br>
+
+            <textarea id="feedback" name="feedback" rows="12" required
+                placeholder="Esccribe tu mensaje aquí"></textarea><br><br>
+            <input type="submit" id="submitButton" value="Enviar">
+        </form>
+
     </div>
 
     <footer id="footer">
@@ -89,6 +105,30 @@
     </footer>
 
     <script src="../resources/handlebar-menu.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var subject;
+        function sendEmail() {
+            chooseSubject();
+            Email.send({
+                SecureToken: "c857b096-dd40-46da-9f02-bd67f627e01a",
+                To: 'prosperidadybienestarsocial@gmail.com',
+                From: "prosperidadybienestarsocial@gmail.com",
+                Subject: subject,
+                Body: document.getElementById("feedback").value
+            }).then(
+                message => alert(message)
+            );
+        }
+        function chooseSubject() {
+            subject = document.getElementById("emailid").value;
+            if (document.getElementById("radio1").checked) {
+                subject += " tiene una inquietud";
+            } else {
+                subject += " te ha hecho una sugerencia";
+            }
+        }
+    </script>
 
 </body>
 
