@@ -1,20 +1,20 @@
 {
   "name": "prosperidadweb",
   "version": "1.0.0",
-  "description": "",
   "main": "\u001b[html)",
   "scripts": {
-    "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CristianContre/ProsperidadWEB"
+    "url": "git+https://github.com/CristianContre/ProsperidadWEB.git"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "lite-server": "^2.5.4"
-  }
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/CristianContre/ProsperidadWEB/issues"
+  },
+  "homepage": "https://github.com/CristianContre/ProsperidadWEB#readme",
+  "description": ""
 }

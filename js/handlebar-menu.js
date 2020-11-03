@@ -9,23 +9,23 @@ const context = {
         },
         {
             name: "Quienes Somos",
-            linkedPage: './sites/aboutus.html',
+            linkedPage: './aboutus.html',
         },
         {
             name: 'Servicios',
-            linkedPage: './sites/services.html',
+            linkedPage: './services.html',
         },
         {
             name: 'Experiencia',
-            linkedPage: './sites/experience.html',
+            linkedPage: './experience.html',
         },
         {
             name: 'Documentos',
-            linkedPage: './sites/documents.html',
+            linkedPage: './documents.html',
         },
         {
             name: 'Contacto',
-            linkedPage: './sites/contact.html',
+            linkedPage: './contact.html',
         }
     ]
 }
