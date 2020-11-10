@@ -11,10 +11,19 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
   "bugs": {
     "url": "https://github.com/CristianContre/ProsperidadWEB/issues"
   },
   "homepage": "https://github.com/CristianContre/ProsperidadWEB#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
 }
