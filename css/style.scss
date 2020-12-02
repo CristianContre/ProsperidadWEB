@@ -1,0 +1,84 @@
+.red {
+    border: 2px solid red;
+}
+.blue {
+    border: 2px solid blue;
+}
+.green {
+    border: 2px solid green;
+}
+.purple {
+    border: 2px solid purple;
+}
+
+$dark: #102B33;
+$mid: #18414D;
+$light: #3F8499;
+$line: rgba(255, 99, 71, 0.3);
+$link: rgba(255,255,255,.5);
+
+#jumbotron {
+    background-color: $dark;
+    // background-image: url("/resources/img/jumbotron.jpg");
+    background-position: center;
+    color: white;
+}
+
+.bg-nav {
+    background-color: $mid;
+}
+
+.footer {
+    background-color: $dark;
+    color: $link;
+    a {
+        color: $link;
+    }
+}
+
+.rs-container {
+    height: 30px;
+    width: 30px;
+}
+
+.img-rs {
+    width: 20px;
+    opacity: .5;
+}
+
+.img-rs:hover {
+    transition: opacity .1s ease;
+    transition: width .1s ease;
+    width: 30px;
+    opacity: 1;
+}
+
+.fs-1 {
+    font-size: .7rem;
+}
+
+.row-content {
+    margin: 3rem 0;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid $line;
+}
+
+.img-index {
+    height: 200px;
+    width: 200px;
+}
+
+.row-content {
+    a {
+        color: black;
+        opacity: .8;
+    }
+    h1 {
+        margin-bottom: 2rem;
+    }
+    span {
+        width: 100%;
+        border-top: 1px solid $line;
+        padding: 2rem 0;
+    }
+}
