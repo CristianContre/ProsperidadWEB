@@ -58,8 +58,8 @@ $link: rgba(255,255,255,.5);
 }
 
 .row-content {
-    min-height: 300px;
-    margin-bottom: 2rem;
+    margin: 3rem 0;
+    padding-bottom: 3rem;
     border-bottom: 1px solid $line;
 }
 
@@ -72,5 +72,13 @@ $link: rgba(255,255,255,.5);
     a {
         color: black;
         opacity: .8;
+    }
+    h1 {
+        margin-bottom: 2rem;
+    }
+    span {
+        width: 100%;
+        border-top: 1px solid $line;
+        padding: 2rem 0;
     }
 }

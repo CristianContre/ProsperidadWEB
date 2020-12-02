@@ -42,8 +42,8 @@
   font-size: .7rem; }
 
 .row-content {
-  min-height: 300px;
-  margin-bottom: 2rem;
+  margin: 3rem 0;
+  padding-bottom: 3rem;
   border-bottom: 1px solid rgba(255, 99, 71, 0.3); }
 
 .img-index {
@@ -53,3 +53,11 @@
 .row-content a {
   color: black;
   opacity: .8; }
+
+.row-content h1 {
+  margin-bottom: 2rem; }
+
+.row-content span {
+  width: 100%;
+  border-top: 1px solid rgba(255, 99, 71, 0.3);
+  padding: 2rem 0; }

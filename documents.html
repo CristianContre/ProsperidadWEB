@@ -2,41 +2,46 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundación para la Prosperidad y el Bienestar Social</title>
+    <title>Documentos: Fundación para la Prosperidad y el Bienestar Social</title>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link href="./css/style.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
-
-    <script id="menu-template" type="text/x-handlebars-template">
-        {{#each menuItem}}
-        <a href={{this.linkedPage}} class="menu-item">{{this.name}}</a>
-        {{/each}}
-    </script>
-
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
 <body>
 
-    <header>
-        <div id="foundation-logo">
-            <a href="./index.html"><img src="./resources/img/logo-fundacion.svg"></a>
-        </div>
-        <div id="header-right">
-            <div id="page-title">
-                <h1>Fundación para la Prosperidad y el Bienestar Social</h1>
-            </div>
-            <div id="header-nav">
-                <div id="nav-menu-app">
-                    <span id="logo-menu">☰</span>
+    <header class="jumbotron jumbotron-fluid m-0" id="jumbotron">
+        <div class="container-fluid m-0">
+            <div class="row row-header">
+                <div class="col-12 col-sm-2 d-flex justify-content-center align-items-center">
+                    <a href="./index.html" class=""><img src="./resources/img/logo-fundacion.svg" class="img-fluid"></a>
                 </div>
-                <nav id="nav-menu">
-                    <!-- Script id="menu-template" -->
-                </nav>
+                <div class="col-12 col-sm-10 text-center">
+                    <h1>Fundación para la Prosperidad y el Bienestar Social</h1>
+                </div>
             </div>
         </div>
     </header>
+
+    <nav class="navbar navbar-dark navbar-expand-sm bg-nav">
+        <div class="container-fluid justify-content-end">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-center" href="./index.html">Inicio</a>
+                    <li class="nav-item"><a class="nav-link text-center" href="./aboutus.html">Nosotros</a>
+                    <li class="nav-item"><a class="nav-link text-center" href="/services.html">Servicios</a>
+                    <li class="nav-item"><a class="nav-link text-center" href="/experience.html">Experiencia</a>
+                    <li class="nav-item active"><a class="nav-link text-center" href="#">Documentos</a>
+                    <li class="nav-item"><a class="nav-link text-center" href="./contact.html">Contacto</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div id="body-main">
         <h1>Acta de Constitución</h1>
@@ -49,7 +54,8 @@
         </div>
         <h1>Certificado Antecedentes Junta de Socios</h1>
         <div>
-            <a href="./resources/doc/certificado antecedentes junta de socios.pdf" target="_blank">antecentessocios.pdf</a><br><br>
+            <a href="./resources/doc/certificado antecedentes junta de socios.pdf"
+                target="_blank">antecentessocios.pdf</a><br><br>
         </div>
         <h1>Certificado Cámara de Comercio</h1>
         <div>
@@ -57,11 +63,13 @@
         </div>
         <h1>Certificado Cumplimiento de Requisitos</h1>
         <div>
-            <a href="./resources/doc/certificado cumplimiento de requisitos.pdf" target="_blank">certificadorequisitos.pdf</a><br><br>
+            <a href="./resources/doc/certificado cumplimiento de requisitos.pdf"
+                target="_blank">certificadorequisitos.pdf</a><br><br>
         </div>
         <h1>Estados Financieros 2019</h1>
         <div>
-            <a href="./resources/doc/ESTADOS FINANCIEROS AÑO 2019.pdf" target="_blank">estadosfinancieros2019.pdf</a><br><br>
+            <a href="./resources/doc/ESTADOS FINANCIEROS AÑO 2019.pdf"
+                target="_blank">estadosfinancieros2019.pdf</a><br><br>
         </div>
         <h1>Estatutos Fundación</h1>
         <div>
@@ -69,42 +77,70 @@
         </div>
         <h1>Formulario Presentado 5245 2020</h1>
         <div>
-            <a href="./resources/doc/FORMULARIO PRESENTADO 5245 AÑO 2020.pdf" target="_blank">formulario52452020.pdf</a><br><br>
+            <a href="./resources/doc/FORMULARIO PRESENTADO 5245 AÑO 2020.pdf"
+                target="_blank">formulario52452020.pdf</a><br><br>
         </div>
     </div>
 
-    <footer id="footer">
-        <div id="copyright">
-            <h5>© 2020 Fundación para la Prosperidad y el Bienestar Social</h5>
-        </div>
-        <div id="social-networks">
-            <div id="social-networks-logos">
-                <div>
-                    <a href="https://www.facebook.com/fundacionparalaprosperidadybienestarsocial/" target="_blank">
-                        <img class="social-logo" src="./resources/img/logo-facebook-white.png">
-                    </a>
-                </div>
-                <!-- <div>
-                    <a href="">
-                        <img class="social-logo" src="./resources/img/logo-instagram-whitef.png" target="_blank">
-                    </a>
-                </div> -->
-                <div>
-                    <a href="">
-                        <img class="social-logo" src="./resources/img/logo-whatsapp-white.png" target="_blank">
-                    </a>
+    <footer class="footer">
+        <div class="container-fluid pt-3 pb-3">
+            <div class="row align-items-center mb-3">
+
+                <nav class="col-3 navbar-dark">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-center" href="./index.html">Inicio</a>
+                        <li class="nav-item"><a class="nav-link text-center" href="./aboutus.html">Nosotros</a>
+                        <li class="nav-item"><a class="nav-link text-center" href="/services.html">Servicios</a>
+
+                        <li class="nav-item"><a class="nav-link text-center" href="/experience.html">Experiencia</a>
+
+                        <li class="nav-item active"><a class="nav-link text-center" href="#">Documentos</a>
+
+                        <li class="nav-item"><a class="nav-link text-center" href="./contact.html">Contacto</a>
+                    </ul>
+                </nav>
+
+                <div class="col-9 col-md-6">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <div class="row justify-content-center">
+                                <div class="rs-container d-flex align-items-center justify-content-center">
+                                    <a href="https://www.facebook.com/fundacionparalaprosperidadybienestarsocial/"
+                                        target="_blank">
+                                        <img class="img-rs" src="./resources/img/logo-facebook-white.png">
+                                    </a>
+                                </div>
+                                <div class="rs-container"></div>
+                                <div class="rs-container d-flex align-items-center justify-content-center">
+                                    <a href="">
+                                        <img class="img-rs" src="./resources/img/logo-whatsapp-white.png"
+                                            target="_blank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <span class="text-center mt-2 fs-1">Visítanos en Redes Sociales</span>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <span>Tel: <a href="tel:+573186998561" target="_blank">+573186998561</a></span><br>
+                            <span>Dirección: Carrera 9C # 64 CN - 07 - Popayán</span><br>
+                            <span>Email: <a href="./contact.html#form1"
+                                    target="_blank">prosperidadybienestarsocial@gmail.com</a></span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="social-networks-text">
-                <h6>Visítanos en redes sociales</h6>
+            <div class="row align-items-center justify-content-center">
+                <span>© 2020 Fundación para la Prosperidad y el Bienestar Social</span>
             </div>
         </div>
     </footer>
 
-    <script src="./js/handlebar-menu.js" type="text/javascript"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 
 </html>
-
-<!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> -->
