@@ -57,18 +57,15 @@ $link: rgba(255,255,255,.5);
     font-size: .7rem;
 }
 
-.row-content {
-    margin: 3rem 0;
-    padding-bottom: 3rem;
-    border-bottom: 1px solid $line;
-}
-
 .img-index {
     height: 200px;
     width: 200px;
 }
 
 .row-content {
+    margin: 3rem 0;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid $line;
     a {
         color: black;
         opacity: .8;
@@ -76,9 +73,7 @@ $link: rgba(255,255,255,.5);
     h1 {
         margin-bottom: 2rem;
     }
-    span {
-        width: 100%;
-        border-top: 1px solid $line;
-        padding: 2rem 0;
+    h2 {
+        margin-bottom: 2rem;
     }
 }

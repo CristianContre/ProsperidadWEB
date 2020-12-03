@@ -41,23 +41,18 @@
 .fs-1 {
   font-size: .7rem; }
 
-.row-content {
-  margin: 3rem 0;
-  padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(255, 99, 71, 0.3); }
-
 .img-index {
   height: 200px;
   width: 200px; }
 
-.row-content a {
-  color: black;
-  opacity: .8; }
-
-.row-content h1 {
-  margin-bottom: 2rem; }
-
-.row-content span {
-  width: 100%;
-  border-top: 1px solid rgba(255, 99, 71, 0.3);
-  padding: 2rem 0; }
+.row-content {
+  margin: 3rem 0;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 99, 71, 0.3); }
+  .row-content a {
+    color: black;
+    opacity: .8; }
+  .row-content h1 {
+    margin-bottom: 2rem; }
+  .row-content h2 {
+    margin-bottom: 2rem; }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-100">
 
 <head>
     <title>Contacto: Fundación para la Prosperidad y el Bienestar Social</title>
@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
 
     <header class="jumbotron jumbotron-fluid m-0" id="jumbotron">
         <div class="container-fluid m-0">
@@ -46,43 +46,64 @@
         </div>
     </nav>
 
-    <div id="body-main">
-        <h1>Teléfono</h1>
-        <div>
-            <span><a href="tel:+573186998561" target="_blank">+573186998561</a></span><br><br><br>
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-12 col-sm-6 text-center text-sm-left">
+                <h3>Teléfono</h3>
+            </div>
+            <div class="col-12 col-sm-6 align-self-center text-center">
+                <a href="tel:+573186998561" target="_blank">+573186998561</a>
+            </div>
         </div>
-        <h1>Dirección</h1>
-        <div>
-            <span>Carrera 9C # 64 CN - 07 Barrio/Cruz Roja - Popayán</span><br><br><br>
+        <div class="row row-content">
+            <div class="col-12 col-sm-6 text-center text-sm-left">
+                <h3>Dirección</h3>
+            </div>
+            <div class="col-12 col-sm-6 align-self-center text-center">
+                Carrera 9C # 64 CN - 07 Barrio/Cruz Roja - Popayán
+            </div>
         </div>
-        <h1>Facebook</h1>
-        <div>
-            <span><a href="https://www.facebook.com/fundacionparalaprosperidadybienestarsocial/"
-                    target="_blank">@fundacionparalaprosperidadybienestarsocial</a></span><br><br><br>
-        </div>
-        <h1>Email</h1>
-        <div>
-            <span><a href="mailto:prosperidadybienestarsocial@gmail.com"
-                    target="_blank">prosperidadybienestarsocial@gmail.com</a></span><br><br><br>
-        </div>
-        <h3>Haznos llegar tu inquietud o sugerencia</h3><br>
-        <form method="dialog" id="form1" onsubmit="sendEmail()">
-            <label for="emailid">Tu email</label><br>
-            <input type="email" id="emailid" name="emailid" placeholder="user@dir.com" required><br><br>
+        <div class="row row-content">
+            <div class="col-12 col-sm-6 text-center text-sm-left">
+                <h3>Facebook</h3>
+            </div>
 
-            <input type="radio" name="inqsug" id="radio1" value="inquietud" checked>
-            <label for="radio1">Inquietud&nbsp&nbsp&nbsp&nbsp&nbsp</label>
-            <input type="radio" name="inqsug" id="radio2" value="sugerencia">
-            <label for="radio2">Sugerencia</label><br><br>
+            <div class="col-12 col-sm-6 align-self-center text-center">
+                <a href="https://www.facebook.com/fundacionparalaprosperidadybienestarsocial/"
+                    target="_blank">@fundacionparalaprosperidadybienestarsocial</a>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-12 col-sm-6 text-center text-sm-left">
+                <h3>Email</h3>
+            </div>
 
-            <textarea id="feedback" name="feedback" rows="12" required
-                placeholder="Esccribe tu mensaje aquí"></textarea><br><br>
-            <input type="submit" id="submitButton" value="Enviar">
-        </form>
+            <div class="col-12 col-sm-6 align-self-center text-center">
+                <a href="mailto:prosperidadybienestarsocial@gmail.com"
+                    target="_blank">prosperidadybienestarsocial@gmail.com</a>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-12 text-center text-sm-left">
+                <h3>Haznos llegar tu inquietud o sugerencia</h3>
+            </div>
+            <form method="dialog" id="form1" onsubmit="sendEmail()">
+                <label for="emailid">Tu email</label>
+                <input type="email" id="emailid" name="emailid" placeholder="user@dir.com" required>
 
+                <input type="radio" name="inqsug" id="radio1" value="inquietud" checked>
+                <label for="radio1">Inquietud&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input type="radio" name="inqsug" id="radio2" value="sugerencia">
+                <label for="radio2">Sugerencia</label>
+
+                <textarea id="feedback" name="feedback" rows="12" required
+                    placeholder="Esccribe tu mensaje aquí"></textarea>
+                <input type="submit" id="submitButton" value="Enviar">
+            </form>
+        </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer mt-auto">
         <div class="container-fluid pt-3 pb-3">
             <div class="row align-items-center mb-3">
 
@@ -119,7 +140,8 @@
                                 </div>
                             </div>
                             <div class="row justify-content-center">
-                                <span class="text-center mt-2 fs-1">Visítanos en Redes Sociales</span>
+                                <span class="text-center mt-2 fs-1">Visítanos en Redes
+                                    Sociales</span>
                             </div>
                         </div>
                         <div class="col-12 text-center">
