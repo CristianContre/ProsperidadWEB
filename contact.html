@@ -48,57 +48,74 @@
 
     <div class="container">
         <div class="row row-content">
-            <div class="col-12 col-sm-6 text-center text-sm-left">
+            <div class="col-12 col-md-6">
                 <h3>Teléfono</h3>
             </div>
-            <div class="col-12 col-sm-6 align-self-center text-center">
+            <div class="col-12 col-md-6 align-self-center text-center">
                 <a href="tel:+573186998561" target="_blank">+573186998561</a>
             </div>
         </div>
         <div class="row row-content">
-            <div class="col-12 col-sm-6 text-center text-sm-left">
-                <h3>Dirección</h3>
-            </div>
-            <div class="col-12 col-sm-6 align-self-center text-center">
-                Carrera 9C # 64 CN - 07 Barrio/Cruz Roja - Popayán
-            </div>
-        </div>
-        <div class="row row-content">
-            <div class="col-12 col-sm-6 text-center text-sm-left">
-                <h3>Facebook</h3>
-            </div>
-
-            <div class="col-12 col-sm-6 align-self-center text-center">
-                <a href="https://www.facebook.com/fundacionparalaprosperidadybienestarsocial/"
-                    target="_blank">@fundacionparalaprosperidadybienestarsocial</a>
-            </div>
-        </div>
-        <div class="row row-content">
-            <div class="col-12 col-sm-6 text-center text-sm-left">
+            <div class="col-12 col-md-6">
                 <h3>Email</h3>
             </div>
 
-            <div class="col-12 col-sm-6 align-self-center text-center">
+            <div class="col-12 col-md-6 align-self-center text-center">
                 <a href="mailto:prosperidadybienestarsocial@gmail.com"
                     target="_blank">prosperidadybienestarsocial@gmail.com</a>
             </div>
         </div>
         <div class="row row-content">
-            <div class="col-12 text-center text-sm-left">
-                <h3>Haznos llegar tu inquietud o sugerencia</h3>
+            <div class="col-12 col-md-6">
+                <h3>Facebook</h3>
             </div>
-            <form method="dialog" id="form1" onsubmit="sendEmail()">
-                <label for="emailid">Tu email</label>
-                <input type="email" id="emailid" name="emailid" placeholder="user@dir.com" required>
 
-                <input type="radio" name="inqsug" id="radio1" value="inquietud" checked>
-                <label for="radio1">Inquietud&nbsp&nbsp&nbsp&nbsp&nbsp</label>
-                <input type="radio" name="inqsug" id="radio2" value="sugerencia">
-                <label for="radio2">Sugerencia</label>
-
-                <textarea id="feedback" name="feedback" rows="12" required
-                    placeholder="Esccribe tu mensaje aquí"></textarea>
-                <input type="submit" id="submitButton" value="Enviar">
+            <div class="col-12 col-md-6 align-self-center text-center">
+                <a href="https://www.facebook.com/fundacionparalaprosperidadybienestarsocial/"
+                    target="_blank">@fundacionparalaprosperidadybienestarsocial</a>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-12 col-md-6">
+                <h3>Dirección</h3>
+            </div>
+            <div class="col-12 col-md-6 align-self-center text-center">
+                <a href="https://www.google.com/maps/place/2%C2%B028'56.5%22N+76%C2%B034'13.4%22W/@2.4823683,-76.5709412,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d2.482367!4d-76.5703936?hl=es"
+                    target="_blank">Carrera 9C # 64 CN - 07 - Popayán</a>
+            </div>
+            <div class="col-12 mt-3 d-flex justify-content-center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5637.161972232347!2d-76.57439931995323!3d2.481972699398221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMjgnNTYuNSJOIDc2wrAzNCcxMy40Ilc!5e0!3m2!1ses!2sco!4v1612794165461!5m2!1ses!2sco"
+                    width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-12">
+                <h3>Déjanos tu inquietud o sugerencia</h3>
+            </div>
+            <form method="dialog" id="form1" onsubmit="sendEmail()" class="col-12">
+                <div class="form-group row col-12 align-items-center">
+                    <input type="radio" name="inqsug" id="radio1" value="inquietud" checked>
+                    <span>&nbsp&nbsp</span>
+                    <label for="radio1" class="col-form-label">Inquietud</label>
+                    <span>&nbsp&nbsp&nbsp&nbsp</span>
+                    <input type="radio" name="inqsug" id="radio2" value="sugerencia">
+                    <span>&nbsp&nbsp</span>
+                    <label for="radio2" class="col-form-label">Sugerencia</label>
+                </div>
+                <div class="form-group row col-12">
+                    <label for="emailid" class="col-sm-3 col-form-label">Tu email</label>
+                    <input type="email" id="emailid" name="emailid" placeholder="ejemplo@gmail.com" class="col-sm-9"
+                        required>
+                </div>
+                <div class="form-group row col-12">
+                    <textarea class="col-12" id="feedback" name="feedback" rows="12" required
+                        placeholder="Esccribe tu mensaje aquí."></textarea>
+                </div>
+                <div class="form-group row col-12 justify-content-center">
+                    <input type="submit" id="submitButton" value="Enviar" class="col-12">
+                </div>
             </form>
         </div>
     </div>
@@ -133,7 +150,8 @@
                                 </div>
                                 <div class="rs-container"></div>
                                 <div class="rs-container d-flex align-items-center justify-content-center">
-                                    <a href="">
+                                    <a href="https://api.whatsapp.com/send?phone=573186998561&text=Hola,%20quiero%20contactarme%20con%20alguien%20de%20la%20Fundaci%C3%B3n%20para%20la%20Prosperidad%20y%20el%20Bienestar%20Social."
+                                        target="_blank">
                                         <img class="img-rs" src="./resources/img/logo-whatsapp-white.png"
                                             target="_blank">
                                     </a>
@@ -146,7 +164,9 @@
                         </div>
                         <div class="col-12 text-center">
                             <span>Tel: <a href="tel:+573186998561" target="_blank">+57 318 699 8561</a></span><br>
-                            <span>Dirección: <a href="https://www.google.com/maps/place/2%C2%B028'56.5%22N+76%C2%B034'13.4%22W/@2.4823683,-76.5709412,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d2.482367!4d-76.5703936?hl=es" target="_blank">Carrera 9C # 64 CN - 07 - Popayán</a></span><br>
+                            <span>Dirección: <a
+                                    href="https://www.google.com/maps/place/2%C2%B028'56.5%22N+76%C2%B034'13.4%22W/@2.4823683,-76.5709412,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d2.482367!4d-76.5703936?hl=es"
+                                    target="_blank">Carrera 9C # 64 CN - 07 - Popayán</a></span><br>
                             <span>Email: <a href="./contact.html#form1"
                                     target="_blank">prosperidadybienestarsocial@gmail.com</a></span>
                         </div>
@@ -154,7 +174,10 @@
                 </div>
 
                 <div class="col-12 col-md-4 d-flex justify-content-center">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5637.161972232347!2d-76.57439931995323!3d2.481972699398221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMjgnNTYuNSJOIDc2wrAzNCcxMy40Ilc!5e0!3m2!1ses!2sco!4v1612794165461!5m2!1ses!2sco" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5637.161972232347!2d-76.57439931995323!3d2.481972699398221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMjgnNTYuNSJOIDc2wrAzNCcxMy40Ilc!5e0!3m2!1ses!2sco!4v1612794165461!5m2!1ses!2sco"
+                        width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
             <div class="row align-items-center justify-content-center">
