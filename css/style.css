@@ -1,25 +1,32 @@
-.red {
+.bd-red {
   border: 2px solid red; }
 
-.blue {
+.bd-blu {
   border: 2px solid blue; }
 
-.green {
+.bd-gre {
   border: 2px solid green; }
 
-.purple {
+.bd-pur {
   border: 2px solid purple; }
 
 #jumbotron {
-  background-color: #102B33;
-  background-position: center;
-  color: white; }
+  background-image: url("../resources/img/index/kids-dark.jpg");
+  background-position-x: 10%;
+  background-position-y: 59%;
+  background-size: 100%;
+  color: rgba(255, 255, 255, 0.9);
+  min-height: 350px; }
+  #jumbotron h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    -webkit-text-stroke: 3px rgba(255, 79, 85, 0.3); }
 
 .bg-nav {
-  background-color: #18414D; }
+  background-color: rgba(194, 61, 65, 0.9); }
 
 .footer {
-  background-color: #102B33;
+  background-color: rgba(3, 1, 1, 0.9);
   color: rgba(255, 255, 255, 0.5); }
   .footer a {
     color: rgba(255, 255, 255, 0.5); }
@@ -42,13 +49,12 @@
   font-size: .7rem; }
 
 .img-index {
-  height: 200px;
-  width: 200px; }
+  max-height: 500px; }
 
 .row-content {
   margin: 3rem 0;
   padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(255, 99, 71, 0.3); }
+  border-bottom: 1px solid rgba(255, 79, 85, 0.3); }
   .row-content a {
     color: black;
     opacity: .8; }
@@ -56,3 +62,32 @@
     margin-bottom: 2rem; }
   .row-content h2 {
     margin-bottom: 2rem; }
+
+.index-link {
+  color: black;
+  opacity: .8; }
+  .index-link h1 {
+    font-size: 3rem; }
+
+.index-circle-1 {
+  width: 100%;
+  max-width: 300px;
+  background: rgba(194, 61, 66, 0.2); }
+
+.index-circle-2 {
+  max-width: 400px;
+  width: 100%;
+  background-color: rgba(55, 130, 164, 0.2); }
+
+.index-circle-3 {
+  max-width: 400px;
+  width: 100%;
+  background-color: rgba(226, 208, 70, 0.2); }
+
+.index-circle-1:after, .index-circle-2:after, .index-circle-3:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%; }
+
+.carousel-inner img {
+  margin: auto; }

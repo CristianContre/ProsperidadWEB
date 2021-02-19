@@ -1,38 +1,45 @@
-.red {
+.bd-red {
     border: 2px solid red;
 }
-.blue {
+.bd-blu {
     border: 2px solid blue;
 }
-.green {
+.bd-gre {
     border: 2px solid green;
 }
-.purple {
+.bd-pur {
     border: 2px solid purple;
 }
 
-$dark: #102B33;
-$mid: #18414D;
-$light: #3F8499;
-$line: rgba(255, 99, 71, 0.3);
-$link: rgba(255,255,255,.5);
+$cl-nav: rgba(194, 61, 65, .9);
+$cl-footer: rgba(3, 1, 1, .9);
+$cl-line: rgba(255, 79, 85, 0.3);
+$cl-link: rgba(255,255,255,.5);
+$cl-title: rgba(255,255,255,.9);
 
 #jumbotron {
-    background-color: $dark;
-    // background-image: url("/resources/img/jumbotron.jpg");
-    background-position: center;
-    color: white;
+    background-image: url("../resources/img/index/kids-dark.jpg");
+    background-position-x: 10%;
+    background-position-y: 59%;
+    background-size: 100%;
+    color: $cl-title;
+    min-height: 350px;
+    h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        -webkit-text-stroke: 3px $cl-line;
+    }
 }
 
 .bg-nav {
-    background-color: $mid;
+    background-color: $cl-nav;
 }
 
 .footer {
-    background-color: $dark;
-    color: $link;
+    background-color: $cl-footer;
+    color: $cl-link;
     a {
-        color: $link;
+        color: $cl-link;
     }
 }
 
@@ -58,14 +65,13 @@ $link: rgba(255,255,255,.5);
 }
 
 .img-index {
-    height: 200px;
-    width: 200px;
+    max-height:500px;
 }
 
 .row-content {
     margin: 3rem 0;
     padding-bottom: 3rem;
-    border-bottom: 1px solid $line;
+    border-bottom: 1px solid $cl-line;
     a {
         color: black;
         opacity: .8;
@@ -77,3 +83,43 @@ $link: rgba(255,255,255,.5);
         margin-bottom: 2rem;
     }
 }
+
+.index-link {
+    color: black;
+    opacity: .8;
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+$circle-1: hsla(358, 52%, 50%, 0.2);
+$circle-2: hsla(199, 50%, 43%, 0.2);
+$circle-3: hsla(53, 73%, 58%, 0.2);
+
+.index-circle-1 {
+    width: 100%;
+    max-width: 300px;
+    background: $circle-1;
+}
+
+.index-circle-2 {
+    max-width: 400px;
+    width: 100%;
+    background-color: $circle-2;
+}
+
+.index-circle-3 {
+    max-width: 400px;
+    width: 100%;
+    background-color: $circle-3;
+}
+
+.index-circle-1:after, .index-circle-2:after, .index-circle-3:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.carousel-inner img {
+    margin: auto;
+  }
